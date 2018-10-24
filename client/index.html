@@ -6,12 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Nanum+Gothic|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
-    <h1>Hello World!</h1>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    <div class="mx-4">
+        <img src="http://getdrawings.com/img/chick-silhouette-34.png" alt="img lost">
+        <h1 class="logoName display-4 ">chirper</h1>
+        <p class="lead catchphrase">Communicate. Share. Live.</p>
+        <hr class="my-4">
+    </div>
+    <div class="makeChirp">
+        <div class="form-group m-3">
+            <label for="nameInput">Name:</label>
+            <input type="text" class="form-control" id="nameInput" aria-describedby="nameHelp" placeholder="Enter name">
+            <small id="nameHelp" class="form-text text-muted">Your name is public.</small>
+        </div>
+        <div class="form-group">
+            <input type="ptext" class="form-control" id="chirpInput" placeholder="What's happening?">
+        </div>
+        <button class="btn btn-primary" id="sumbitBtn">Chirp</button>
+    </div>
+
+    <div id="chirps"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>

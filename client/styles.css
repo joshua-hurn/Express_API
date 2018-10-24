@@ -1,0 +1,29 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+body {
+    background-color: #66bedb;
+}
+
+img {
+    margin-top: 20px;
+    margin-left: 2em;
+    float: left;
+    height: 70px;
+    width: 70px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.logoName {
+    font-family: 'Raleway', sans-serif;
+}
+
+.catchphrase {
+    margin-left: 2em;
+    font-family: 'Arimo', sans-serif;
+}

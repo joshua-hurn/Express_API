@@ -1,8 +1,11 @@
 {
-    "0": {},
-    "2": {
+    "0": {
+        "author": "Joshua",
+        "text": "Hello Yoni!"
+    },
+    "1": {
         "author": "Drayton",
         "text": "It's super neat!"
     },
-    "nextid": 3
+    "nextid": 2
 }
