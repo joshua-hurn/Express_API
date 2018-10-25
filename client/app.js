@@ -13,13 +13,38 @@ let getChirps = () => {
                     <div class="card-body">
                         <h4 class="card-title">${chirp.author}</h4>
                         <p class="card-text">${chirp.text}</p>
-                        <button data-id=${chirp.id} onclick="deleteChirp()" type="button" class="close closeBtn" data-dismiss="modal" aria-label="Close">
+                        <button data-id=${chirp.id} type="button" class="editBtn btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+                        edit
+                        </button>
+                        <button data-id=${chirp.id} onclick="deleteChirp()" type="button" class="closeBtn close " data-dismiss="modal" aria-label="Close">
                         &times;
                         </button>
                     </div>
                 </div>`
             );
             $('#chirps').append(newChirpDiv);
+        })
+        $('.editBtn').click(() => {
+            let modalDiv = $(
+                `<div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>`
+            )
+            $("#exampleModal").append(modalDiv);
         })
     });
 };
